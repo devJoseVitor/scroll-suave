@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app {
+  position: fixed;
+}
+
+.sections {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sections > div {
+  margin: 3em;
+  max-width: 50%;
+}
+
+.sections > div h1, .sections > div p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sections > div h1 {
+  font-size: 2.5rem;
+}
+
+.sections > div p {
+  margin-top: 1em;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.sec1 {
+  background-color: #262026;
+}
+
+.sec2 {
+  background-color: #7a2ad6;
+}
+
+.sec3 {
+  background-color: #eb2a84;
+}
+
+.sec4 {
+  background-color: #1bda90;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  color: white;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
