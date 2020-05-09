@@ -31,6 +31,7 @@ body.style.height = `${height}px`;
  * coincida com o valor da nova posição (window.pageYOffset)
  */
 const suavizarScroll = () => {
+  posicao < 1 ? posicao = 0 : false;
   posicao += (window.pageYOffset - posicao) * velocidadeTransicao;
   app.style.transform = `translateY(-${posicao}px) `;
   requestAnimationFrame(suavizarScroll);

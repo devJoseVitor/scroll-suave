@@ -88,5 +88,22 @@ footer {
 footer p {
   color: white;
   font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+footer p a {
+  text-decoration: none;
+  font-weight: bolder;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  pointer-events: visible;
+  color: white;
+}
+
+footer p a:hover {
+  color: #934de2;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,19 @@
   scroll-behavior: smooth;
 }
 
+@mixin linkCfg{
+  text-decoration: none;
+  font-weight: bolder;
+  transition: .3s ease;
+  pointer-events: visible;
+  color: white;
+
+  &:hover{
+    color: rgba($color: #934de2, $alpha: 1.0);
+  }
+  
+}
+
 body{ overflow-x: hidden; }
 
 .app{ position: fixed; }
@@ -59,5 +72,10 @@ footer{
   p{
     color: white;
     font-weight: bold;
+    user-select: none;
+
+    a{
+      @include linkCfg;
+    }
   }
 }
