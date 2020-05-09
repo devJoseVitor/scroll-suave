@@ -2,7 +2,7 @@
 O foco do projeto é criar um scroll suave com Javascript puro!🙂
 
 ## 🕹 Demo
-Sem demonstração disponível no momento.
+[Clique aqui para ver a demonstração.](https://devjosevitor.github.io/scroll-suave/)
 
 ## 📝 Todo
 * Adicionar indicador de scroll.
