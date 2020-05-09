@@ -9,18 +9,30 @@ const app = document.querySelector('.app');
  * de transição entre a última posição do scroll e a atual
  */
 const height = app.getBoundingClientRect().height;
-const velocidade = .1;
+const velocidadeTransicao = .1;
 
 /**
- * Posição atual do scroll suavizado
+ * Posição da suavização do scroll
  */
-let posicaoSuave = 0;
+let posicao = 0;
 
+/**
+ * Definindo o tamanho do body com o mesmo tamanho
+ * do container do app
+ */
 body.style.height = `${height}px`;
 
+/**
+ * Função para fazer a suavização do scroll
+ * Pega o valor da posição atual do scroll do eixo Y,
+ * subtraí com o valor da posição anterior e multiplica
+ * pela velocidade, fazendo com que o valor diminua em X vezes,
+ * então repete a execução da função até que o valor antigo (posicao)
+ * coincida com o valor da nova posição (window.pageYOffset)
+ */
 const suavizarScroll = () => {
-  posicaoSuave += (window.pageYOffset - posicaoSuave) * velocidade;
-  app.style.transform = `translateY(-${posicaoSuave}px) `;
+  posicao += (window.pageYOffset - posicao) * velocidadeTransicao;
+  app.style.transform = `translateY(-${posicao}px) `;
   requestAnimationFrame(suavizarScroll);
 }
 
